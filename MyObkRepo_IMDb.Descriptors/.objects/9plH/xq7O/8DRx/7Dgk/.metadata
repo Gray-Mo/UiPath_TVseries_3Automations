@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Acc dropdown list",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "7DgkEJnwyUKRdXUwVCtHgg",
+  "Reference": "OJDNAUAQeUK4UflTQ7tXjg/7DgkEJnwyUKRdXUwVCtHgg",
+  "ParentRef": "OJDNAUAQeUK4UflTQ7tXjg/8DRx30i650mj6FGkisrJCg",
+  "Created": "2025-01-15T20:00:36.1355722Z",
+  "Updated": "2025-01-15T20:00:36.1355722Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

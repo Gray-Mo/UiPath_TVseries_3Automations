@@ -1,0 +1,37 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "IsDownloadSuccess&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MyWorkflows/Download_File_GDrive.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ServiceAccPathKey&Sequence_1",
+        "ServiceAccEmail&Sequence_1",
+        "DownloadLocation&Sequence_1",
+        "FileID&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_IsDonwloadSuccess"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

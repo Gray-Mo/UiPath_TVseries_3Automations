@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Og47wpv2kk-ADBJLFszDPA" Reference="OJDNAUAQeUK4UflTQ7tXjg/UE1rnWbWmkadc8Y5Pt7Wng" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com" CVScreenId="b16e74e6-9270-4d5f-bb74-e5674c6329cb" DesignTimeRectangle="567, 107, 599, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='suggestion-search' tag='INPUT' type='text' class='imdb-header-search__input searchTypeahead__input react-autosuggest__input' placeholder='Search IMDb' aaname='' /&gt;" Guid="88e8558c-2e2a-4873-8854-174de0c5fd70" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b16e74e6-9270-4d5f-bb74-e5674c6329cb" CvElementArea="506, 105, 61, 35" CvType="InputBox" DesignTimeRectangle="508, 107, 59, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-label='All' tag='LABEL' type='' class='ipc-btn ipc-btn--single-padding ipc-btn--center-align-content ipc-btn--default-height ipc-btn--core-base ipc-btn--theme-base ipc-btn--button-radius ipc-btn--on-textPrimary ipc-text-button searchCatSelector-button searchCatSelector__opener searchform__categories nav-search-form__categories' aaname='' check:innerText='All' /&gt;" Guid="39d4feb6-20b5-4b7a-92cb-270d40dfe510" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="cca492ff-30c9-469f-84bc-f73777ef1229" CvTextArea="1244, 115, 55, 15" CvTextArgument="IMDbPro" CvType="Text" DesignTimeRectangle="1230, 105, 84, 36" FuzzySelectorArgument="&lt;webctrl aria-label='Go To IMDb Pro' href='https://pro.imdb.com/login/ap?u=/login/lwa&amp;amp;imdbPageAction=signUp&amp;amp;rf=cons_nb_hm&amp;amp;ref_=cons_nb_hm' tag='A' type='' class='ipc-btn ipc-btn--single-padding ipc-btn--center-align-content ipc-btn--default-height ipc-btn--core-baseAlt ipc-btn--theme-baseAlt ipc-btn--button-radius ipc-btn--on-textPrimary ipc-text-button navbar__flyout__text-button-after-mobile navbar__imdb-pro--toggle' aaname='' /&gt;" Guid="9d791847-4fb1-499e-8932-817e6bd75e11" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9eecacb3dd9da54fe1059897d08e4dd9.png" xmlns="">0ojUDJjW5rUqt-0GmvI60aQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

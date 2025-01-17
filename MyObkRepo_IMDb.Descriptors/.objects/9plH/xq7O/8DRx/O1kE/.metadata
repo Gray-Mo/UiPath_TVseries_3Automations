@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Running time",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "O1kEz4TI30KiBSzm1I7oog",
+  "Reference": "OJDNAUAQeUK4UflTQ7tXjg/O1kEz4TI30KiBSzm1I7oog",
+  "ParentRef": "OJDNAUAQeUK4UflTQ7tXjg/8DRx30i650mj6FGkisrJCg",
+  "Created": "2025-01-15T20:00:36.1927383Z",
+  "Updated": "2025-01-15T20:00:36.1927383Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

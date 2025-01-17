@@ -1,0 +1,83 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Send_Notification_TwilioSMS.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TwiSender&Sequence_1",
+        "TwiReceiver&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_NotificationBody"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Send_Notifications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "NotificationSubject&Sequence_1",
+        "NotificationBody&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Status"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Make_NotificationBodySubject.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "SubjectToEdit&Sequence_1",
+        "BodyToEdit&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Status",
+        "out_NotificationSubject",
+        "out_NotificationBody"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Send_Notification_Gmail.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Username_Gmail&Sequence_1",
+        "Password_Gmail&Sequence_1",
+        "G_Sender&Sequence_1",
+        "G_Receiver&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_NotificationSubject",
+        "in_NotificationBody"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Send_Notification_DiscordMessage.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "responseAttachment&Sequence_1",
+        "RequestURL&Sequence_1",
+        "BotToken&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_NotificationBody"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}

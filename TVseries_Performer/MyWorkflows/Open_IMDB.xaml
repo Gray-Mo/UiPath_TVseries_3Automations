@@ -1,0 +1,378 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Open_IMDB" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Open_IMDB_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.Activities.System</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>CredentialManagement</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Credentials.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>CredentialManagement</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Credentials.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Open_IMDB" sap:VirtualizedContainerService.HintSize="1286,2580" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ss:SecureString" Name="Password" />
+      <Variable x:TypeArguments="x:String" Name="Username" />
+      <Variable x:TypeArguments="x:Boolean" Name="Returned" />
+      <Variable x:TypeArguments="x:String" Default="Credentials_IMDB" Name="Credentials_IMDB" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1060,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Start: Open_IMDB&quot;]" />
+    <p:GetSecureCredential CredentialType="Generic" DisplayName="Get Secure Credentials - Windows Cred Manager" sap:VirtualizedContainerService.HintSize="1060,112" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[Password]" PersistanceType="Enterprise" Result="[Returned]" Target="[Credentials_IMDB]" Username="[Username]" />
+    <If Condition="[Returned]" sap:VirtualizedContainerService.HintSize="1060,2108" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1058,1746" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1024,1686" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch.Try>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="IMDb general" sap:VirtualizedContainerService.HintSize="1022,1250" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="4ce8bfa9-a911-4b2f-989c-22f27b6eb871" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="956,1033" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Default="Dexter" Name="SeriesName" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NCheckState DisplayName="Check App State 'Sign In tab'" sap:VirtualizedContainerService.HintSize="922,971" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="4ce8bfa9-a911-4b2f-989c-22f27b6eb871" Version="V4">
+                        <uix:NCheckState.IfExists>
+                          <TryCatch sap:VirtualizedContainerService.HintSize="418,729" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                            <TryCatch.Try>
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="416,336" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign In tab'" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="imdb.com" CVScreenId="b16e74e6-9270-4d5f-bb74-e5674c6329cb" ContentHash="BcWpFrO1X0G0st_KMk9ZXg" DesignTimeRectangle="1470, 113, 45, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sign In' class='ipc-btn__text' parentid='imdbHeader' tag='SPAN' /&gt;" Guid="831b0ebb-2d14-4d6e-9bc8-9fe4945a95a6" ImageBase64="" InformativeScreenshot="4718bb528080af11cdf6ef35b48f0870.png" Reference="j_ACAEB6iEy4BcQEQ2MfdA/lRCKudEMeUq_634onp50Pg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NClick>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign in with IMDb'" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="imdb.com/registration/signin" CVScreenId="a8f0339c-ca8a-4ac3-98e0-4b170fc5ccb4" ContentHash="dfAjXmfU0EebEUmSQQE9nw" CvElementArea="554, 224, 246, 37" CvType="Button" DesignTimeRectangle="556, 226, 242, 34" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='signin-options' tag='A' type='' class='list-group-item ' aaname='Sign in with IMDb' check:innerText='Sign in with IMDb' /&gt;" Guid="4e5e65e4-8a51-4997-89d5-cf03d205a897" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPYAAAAmCAYAAAD3LGbnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAU8SURBVHhe7Z3Lb9xUFIcZZ9ImnUQlVZMUCqh0EUiFukSwYIEQQjwWFTACxAohKl6FUXZICIkF3ZL5D1ixajaUDS/xEmGG/yEjEBEEkICAEqWVosM99rV9r+fYYydj1za/TzqaGfvO9fE95xt7UqlzEwEAagfEBqCGWGLv7e3R1tYWDQYD2tjYQCAQJQ92lZ1ld00CsXkHD9re3qb9/X29FQBQZthVdpbdNeUOxGbreQAAoHqwu+ywTyA2G48rNQDVhN1lh30Csfl+HQBQXUyHITYANQFiA1BDxi729Z8u0+4P52int3So2O0v0/Wf39ezAgCyMHaxd7+/nXa+OzWW4A8IAEB2xi/2+i2ipAcKdeUGAGQHYsfR71K73Xaj29fbcqdHXX3M9mpPbyuaTVpb0TmsrKlXyWxe6eh16qrsK0ZQ4w6tjTrRivE/FdtoXiuM5oTYhtjGtkheBxZ7c406/rma4R/T2h+d265f54pvZVxdOYT8IHZ6Si+2IWzYEAq93doGNDmIrQnfH5ErIr5Vl9h90oeSYkTNIXYKfLF//XSRBlcX6PfPF2njowX39S+feM//+MJ7/PHjBfr7a09ifs778xa7t6oLLzWiapiuX/i4ohtNYoc/ny1B2LjmmDjCK3bQgFYexhXdHCNhNH94xyHMPyRtwmsztDiW2BHh0tzppBXbFNVe0xRiK8TjJKxtcXdp+ZCb2C9eOEYTToPefXmWGo0GPfXQND1y/5T7/L3XvG2O2t+adujq6gm6dX6Cnn9sukCxRxRPElvYZjW2t8USwWu6qCxxJInNoY8h5TZEeMxgLlMW4ZbXWw8p1/j8Lckk2b1hsYjCMWZeq3y+/n5vjTpqm78/jdjmfIdf2/JTmNjnlybprjOTltivP9OiY1MOvfncjCv2w/cdpXdemqX1D07mJvbQlSCISCGHCiw3d6LYxrjgAyXacBZJYhv5DckoEz2ml2uHOm5+0UZOyj+N2IbEGeRIJXZfy8xr4s6txvYFUc08h9bZuCL7+8Q8hRpUkELEvnnWoeMzDp047rhXaF/sN55t0WzLoVfbLVfse+85QvNzE3Thwan8xHYxGiAS8ULJBS+z2OF7OTedlzp+T+fM7w3yT5RYPiemGLH99euqq7d65DU09o9X7PhzrRKFiD0/59DZ0006d3aSZhLE5lvx5Tub9PgDeYsdwWiS+KJXUOxgPn6vfs456ffzMfy8RDlKJHY4p841q9jSeIidHlls7zb7CSWsKfbFJ1t09EiDLinBXbEfnaa7zzTdcfmIzUUzGjBAaIihossFL7fY4XE7K16e3nido9rmzTOqseVzYgoTO1gbPS6j2OJxxDyFGlSQQsReUGK/8nSLLqnv1KbYHCz2h5fnXLGX7mjSZLNBb70wk6PYXtEsISRRhKJLTVx2scP8OMK8g3w4rJyy5S+tST5iR8gidpBPZK6UNa4iuYm9/c0p+vOrRevRf/4PP3656Ma/3yqB1fi/9JjfPjP+yavQP55FChnTnLYoZpRTbOt8Y5rdvjLJ+Zu5mXMdWOy4Ovg5jjpHY78odjSkdTfWwI5qS83kJvZYoqjv2IcgaOxEYQEoFoh9KOrxfQzUD4idhZjbx5G3wwAUDMQGoIaMXeyd9dtkSQ8S/WU9KwAgC2MX+9rgbSX3aVnULKE+IPi/WQIAZGfsYgMAbjwQG4AaArEBqCGi2PiJHwCqS+xP/OBH+QCoLrE/yoef0QWgerCr7Cy7K/6MLsM72HoexPfrCASi3MGusrOm1IwlNgCgHkBsAGoH0X8M6KLQjI6wFQAAAABJRU5ErkJggg==" InformativeScreenshot="79a076eadd98776d8d9f4c8dea8936a2.png" Reference="j_ACAEB6iEy4BcQEQ2MfdA/Q1YHwsMBDUW-JBbAir99Wg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in with IMDb - IMDb' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NClick>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[Username]" Version="V4">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="imdb.com/ap/signin" CVScreenId="ee46fb82-8e41-4ca9-9277-43ea03912e7e" ContentHash="JzCXuAdvHk-EDpl72IUGvg" CvElementArea="818, 266, 300, 35" CvType="InputBox" DesignTimeRectangle="820, 268, 296, 31" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ap_email' tag='INPUT' type='email' class='a-input-text a-span12 auth-autofocus auth-required-field' aaname='                   Email or mobile phone number                 ' /&gt;" Guid="be1215bb-3ee2-4839-bc5c-a1e3c90acd40" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASwAAAAjCAYAAAAuXDcUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAISSURBVHhe7d09bhNRGEZht1Qoa8iCWAtF2IELBEVo0mUFdJQgBIICimyALgliDCICbNmR8N/HnEuuZUuhATHjTzqP9EaOZ+qjGTd3MLg/jLqjZy/j7OMofi6XIUl9oUG0iCZtN6oE63B4Ui5K0r6hTTRqE6waq7PLJu6dPo07Dx7uVs055zocDaJFNKm0qW1UucYjV/mivcBNj56/iQ/nF/GpaaIZjZxzrrPRHUaDaBFNqtEqr4f16YqaPX7xNr5eXcVkMonpdBqz2cw55zod7RmPx6VFNIk2oTxl1R/YKdn56HPMrq9jsVjEarVyzrnOt2ybNJ/PS4su2ibRJtCqQfnU4v2QqnHjer2++VaSukeDaBFNok3VTrB4FKNuktQ3WkST/hgs3h95JJOkvtEimvRXwbp7cHDzSZL+P4MlKQ2DJSkNgyUpDYMlKQ2DJSkNgyUpDYMlKQ2DJSkNgyUpDYMlKQ2DJSkNgyUpDYMlKQ2DJSkNgyUpDYMlKQ2DJSmNfwqWJHXJYElK49ZgbZ9L+OX7D0/NkbQXCBZN2jmXcPvk5+NX7zyXUFLvaBAHOh+/fr978jPn1Zd/LptSsiftDd+mv18NnXOu6/GWR4NoEU2iTaBVA94P61MWF6gZN/G9c871MRpEi2qsytMV1/hzODzZREuS9gltolGbYNXxyMXF+kO8JPWBBtGi8hq4adQwfgFBfl3IgCrCjQAAAABJRU5ErkJggg==" InformativeScreenshot="f28e776cbf5fa592774e84c8b4be5b18.png" IsResponsive="True" Reference="j_ACAEB6iEy4BcQEQ2MfdA/_03Cn1omz0C271dwsKDONg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb Sign-In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="ee46fb82-8e41-4ca9-9277-43ea03912e7e" CvTextArea="821, 249, 207, 13" CvTextArgument="Email or mobile phone number" CvType="Text" DesignTimeRectangle="820, 246, 296, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='a-form-label' aaname='                   Email or mobile phone number                 ' check:innerText='Email or mobile phone number' /&gt;" Guid="14fa62aa-42e4-47e7-aec2-e4e1d7c7950b" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NTypeInto.Target>
+                                  <uix:NTypeInto.VerifyOptions>
+                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    </uix:VerifyExecutionTypeIntoOptions>
+                                  </uix:NTypeInto.VerifyOptions>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NTypeInto>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="NTypeInto_2" SecureText="[Password]" Version="V4">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="imdb.com/ap/signin" CVScreenId="ee46fb82-8e41-4ca9-9277-43ea03912e7e" ContentHash="uzAJi11Pl0qepZFAn9A4gA" CvElementArea="818, 332, 300, 33" CvType="InputBox" DesignTimeRectangle="820, 333, 296, 31" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl id='ap_password' tag='INPUT' type='password' class='a-input-text a-span12 auth-required-field' aaname='                                 Password                                      ' /&gt;" Guid="584f2df2-f7f0-4bf9-9848-46a7e875356b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASwAAAAjCAYAAAAuXDcUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGRSURBVHhe7d09ThtRGIXhLJ/CBRtBYg8BRGATocC2FArbsin8d8lBzMiWSMoZf9LzSKfx3PqVb3V/NIAiBAso4yxYs/m83dzetsn1dbuaTMzMRlkalBalSaf6YOVDDv28v2+/X17a63TaprOZmdlgS3eyNCgtSpNOo9UHKzW7e3hof97e2mq1auv1um02GzOzQZf2LJfLzxalSWlTpw9WV7LN+3vb7XbtcDiYmQ2+/X7fttvtZ4vmXze/Th+s3BtTtRw8Ho9fvwIMLw1Ki9KktKlzFqz8FUvdAMaWFqVJ/wxW7o/5SwYwtrQoTRIs4OIJFlCGYAFlCBZQhmABZQgWUIZgAWUIFlCGYAFlCBZQhmABZQgWUIZgAWUIFlCGYAFlCBZQhmABZQgWUIZgAWUIFlDGf4OVt78Wi4VXc4CLkGClSd++S5jXVR+fnrxLCIwuDcqDzo/Pz9+//JxXn1OyX38PdFdDM7Ohl1teGpQWdS/Sd/pgRT6kZjmUe6OZ2RhLg9Ki01jFWbAALplgAUW09gH8nntSPmLgzAAAAABJRU5ErkJggg==" InformativeScreenshot="8bb8e5f0a2e3da470fbe47588d1919d1.png" Reference="j_ACAEB6iEy4BcQEQ2MfdA/PaG8K2lqjkK7g_1zn7o5qA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb Sign-In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="ee46fb82-8e41-4ca9-9277-43ea03912e7e" CvTextArea="821, 314, 64, 13" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="820, 311, 120, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='                                 Password                                      ' tag='LABEL' type='' class='a-form-label' check:innerText='Password' /&gt;" Guid="d244e362-a127-4651-8764-455e6149c8e5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAAaCAYAAAB1szj5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQrSURBVGhD7ZexaxtJFMbvPwgqglUdrqQikAscyGBwDAEHUsjGhQwGJ5UMLmTSJAScVJEJAZkQZGGITQrbzRE7YDZFkFRJIYTYINhGSIbAqpC9Cym2MGzh4st7M7PeVbzJ5dKddj4YtPvmvdEyv5n3Zv6AVqykgcdMGnjMpIHHTBp4zKSBx0yxBm63DBgHBhrHnrIMvyKAW9jMpZG65rdJ5O4/wXrdwrBNS3UpgSuJBDJlS1mGX5HA18flRIykGfioeOY2Ue4qn+GQBi7kAx/D+hdlOl5DRkBfRlWZPNeB1arJlNh2L+1+r2+iSn3VlgU31Om5XTTIbjS7cM/IcO7BdRzYTmiMM5fenSAu0seBWadx6iZsHudCylcF83f6zyz5XTWYfQ+GBs6KAI4a8gL4JNZ75PHqtpiogTa7C1v4uqgW0oN94xUaFehsfB+3SAvIRDHNz2kUW2IAfH6UFP2pp6Y01Jel//yeAN7ZnsGfA+OMIrvtZx/1reNUhvzvWKqJnk55MhQTNA1cAS8e8a6inby/iBGenORDfCYP+9MeDNq53Gc7DTz+i/3lYkCvggn2vVNBR/RbMI+6BKqGAtvTlCV6ctxOk3YnhZhPJZjstkNvXZQyPB61W2qhvBgT77l9wt1exXXuo/8rNi1YzVX5fxcL1F+cVJL+nkH+/jLyrw6DuOQcdtr0/z0TpTvSTwNXNXywpVF47yofUijNytSoJvxsDwvKf2plF6bjp9MuimJh0AQvVVANn4xbq0hxTN4AnF1kE0ks3J0h3zm8odS9M81x/ExftyF36cgjgqhULchxJzYYnA+cs0egyDid0lk+8DTtDHltMQ4a6ITqpNt8gsxVOVlBC0qAe1TBwrWgL7PSoERP6hso3JTpmlsqt4vOOXcc4kGSbJRBGu8WqY/g0s7lRZB/rzLDtCwZVlnu9jCkQdsPgEfEaeBCUTU8LL/mUmr8Ki1y4i77e8cG8uF0r+RRGShNS/CFurTJuj2J7Cz9CrhyEaRyc+LAKNM9lROq3xzn12WWD076/HyHR8Vp4D8FrnYj9ZdalNLbPlTl3zNQKlONp9Oz1a7hgRiLgR9ic2VLZguqn5vzg8Dx6aE8J1CThzUPb+bl+5XEDHYkb8oSnPLZdgOF15R9Xi+rmk4+fXaIBo7+FqaEnQ54z+j7/llFdpTfNfB/AU4e4VP61THkpvnQ5QOnif0u3U9t8Am6oRZK0FKFmkz1rPOg318EF7tyakvdAKQulRT6hsdNf6QfACfZ+/fkWUHFLMzeEM8xB/6LEndluheLGnxZ3ld5Eg/fwVniXsz2gbvz7yjibv4rEofN/xgzRPp94Fr/S2ngMZMGHjNp4DGTBh4zaeAx0wDwU9vG24MDrL18iedra7oNYbsAzrAZ9IePH2H1euifnODk9FS3oWqn+AafcrG0BJGItQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NTypeInto.Target>
+                                  <uix:NTypeInto.VerifyOptions>
+                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    </uix:VerifyExecutionTypeIntoOptions>
+                                  </uix:NTypeInto.VerifyOptions>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NTypeInto>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'Sign in button'" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="imdb.com/ap/signin" CVScreenId="ee46fb82-8e41-4ca9-9277-43ea03912e7e" ContentHash="b-OBDvHR6k-7JTVwZvrsiw" CvElementArea="820, 386, 298, 35" CvTextArea="947, 397, 42, 15" CvTextArgument="Sign in" CvType="Button" DesignTimeRectangle="821, 389, 294, 29" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='signInSubmit' tag='INPUT' type='submit' class='a-button-input' aaname='' /&gt;" Guid="96bef6a0-b176-42ee-ab42-a8ef02d0546f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASoAAAAhCAYAAABuiuZYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQuSURBVHhe7Z2xaxNRHMf9D0LuBSoOdSi0UFAKQge14BA3O4jUoXToUDoVOtRJKQiCIAodAgqhEEhRUJBCh0KgIO1QWhxKkELUweDURalT3X7+vrk7c7m8pJe0l5be9wsfkty7e8n04f3ee3e5JAzDMOc8nYnq7xeRX0siP++JfB8S+XpZpJIhhJD2wBVwBtwBh8AlHSSaqP58FPlxS+TbVf3CK94Xh34IIYS0w3cGHAKXwClwS4S0FxWsV81qpwPNX0oIIScFboFjjhlhtRbV4Tt7x4QQEgdwTovYRfX7jTs0s3VGCCFxAOfAPZY0iwpWq81FWToihJC4gHPgHsvIqlFUqBNtHRBCSC8JzVk1igqTWraLCCGkl8BFgdRFhWVCru4RQs4DcFFg60JdVNjTYLuAEELOAjjJiysq1INc5SPK0U5GDrb1dT9wXN+XV0PHToO4+iUXAzjJm6tyRYUt7f6Oc5JMSkYmBtKSSte5+9y4bStO7fPcSuiakxJXv+RiACfBTRpXVLj/xnYiSQzFbFr6Hho59Ec3ZR1Z7XiiquhxjLIC558OcfVLLgxwk8YVVe0GY8tJJCEYeTacltHHtjZl28jLaUdKKpXaZy0P85OODA45MrFgZDOn7QW37aDgyJNcRqoFI3MqP5wzs+RdF6ahXyPFae1rQ18XHBkb0t+T1c+fQ9eQ5AAnwU0aV1R8CkLi2Z1FuefI1KKRyl6oXeUxqiVabsP9DKn13zdS/qS8NjLer1LR69BWXXTLRggM7ZvzKO8cKfqSC9LQr5EZfZ8acST/VoW3bmRK++2bDV1DkgXcpHFFZTuBJI7KKx3JqBwgmkEV0a6OnGptQaG8d6RPxfMhILPSZEhUN4xUvTbZMzLxX0YhLKKaWa63l+e1r0m//CSJRcMRFWniqKRl2zWVxLCOrnAsKJRld4RUCpzfVlSegLoRVa0viirZNIyoOEdFwgSFFBRKwT0eeURFUZFuaZqj4qpfwjFyuBVYfdvPyJrKxzqi0rZHWh5eV4FUtlUmq+5cEkVFYqFh1Y/7qBKOkfwdlYKKIuXNUaUGHCmWvPYGoShbWhrexIpeWsamjeQeUFQkBpr2UXFnOgFazmFXen3/VDTyt1VYTykUcso07UxHeK8fichuzsjmOqSmr4uO9GP7gZaOtnMJ6Zqme/0QPj2BRMJI+YUj4yNu6TeadWRNSzj7uYR0ScunJyB8HhUh5DzQ8nlUCOpB20WEENJLvLkpP42iQvjMdELIWQDnwD3HPjPdD/+FhhDSa+CcyP9C4wdWs3VGCCFxYBlJ+WktKgR1Iia1uBpICIkDuAWOCc1JhdNeVH6wTIg9DbW5K28HO+ewCCGd4DsDDoFL4JTAFoR2iSYqP7AetrTj/pvajcx86gIhJAJwBZwBd8Ahx4ygwulMVAzDMD2PyD+oXtmw8bP1LQAAAABJRU5ErkJggg==" InformativeScreenshot="cb3fbf11b4030279b6379537392823b4.png" Reference="j_ACAEB6iEy4BcQEQ2MfdA/Zs9N2vdEKE-5uXF7XcmTdw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb Sign-In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NClick>
+                              </Sequence>
+                            </TryCatch.Try>
+                            <TryCatch.Catches>
+                              <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                <ActivityAction x:TypeArguments="s:Exception">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,166" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Warn" Message="[&quot;Couldn't complete Sign In activities, &quot;+exception.Message]" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </Catch>
+                            </TryCatch.Catches>
+                            <TryCatch.Finally>
+                              <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </TryCatch.Finally>
+                          </TryCatch>
+                        </uix:NCheckState.IfExists>
+                        <uix:NCheckState.IfNotExists>
+                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn" Message="[&quot;You are already logged in&quot;]" />
+                          </Sequence>
+                        </uix:NCheckState.IfNotExists>
+                        <uix:NCheckState.Target>
+                          <uix:TargetAnchorable BrowserURL="imdb.com" CVScreenId="b16e74e6-9270-4d5f-bb74-e5674c6329cb" ContentHash="BcWpFrO1X0G0st_KMk9ZXg" DesignTimeRectangle="1470, 113, 45, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sign In' class='ipc-btn__text' parentid='imdbHeader' tag='SPAN' /&gt;" Guid="831b0ebb-2d14-4d6e-9bc8-9fe4945a95a6" ImageBase64="" InformativeScreenshot="4718bb528080af11cdf6ef35b48f0870.png" Reference="OJDNAUAQeUK4UflTQ7tXjg/lRCKudEMeUq_634onp50Pg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                        </uix:NCheckState.Target>
+                      </uix:NCheckState>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" ContentHash="IuGTlxrQSUSZreYd82R8JA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAdVJREFUWEftlDssQ1EYx69q7+2tPt2iJjERLJV4LMSgBq9OWBjaREKICBI0MZSQVEMIDQORWiRKjBUbJWHvZMUuwfy53znpfbSJ3EgwOMMv53/O7fm+X865vdzHnQ/+EibABJgAE2ACBQLHyy4ItPAwGLDCzYFEMhLqF+HlslyZI9mUVzfvauUhErbDW6YCJodsZC0+7dDVz6dAIDpmB47jwCeZ4DzuIRkRBQ5uDyVljtwn1bnHUaTkkzU3NDdYSA7L4vk9tBgWQGJTDt1cK5De8YC5mOatWacigCeXirkJ77cVul6IIQHeQgvjkeJJYEa0AleJUrBZ6SloBQRe/f3KuF3XCzEkUFNVTEarXKyu2qwU/EqgqZ4KDHeLEOwQSO5rF3S9EEMC/lozVHpNJPe00WKIkRMIB0UC5l55b34/QwKNskCbnycZ324ckXyB3PX8iAC+TJg3Z9QXUSuwNEr3Idtz6hWMyFcw0Gkl+dtXgAKrE7TxxQZdQ7QCOUwmDu6OJOUELGb12WKoRNcLKRB4OJZgL+KEZNQFjxdlJKfW3ZA99ZL8lC4nI/Kcps9z7MvgfqxzFneTtYz8MUssOGF33gmv1wb+hr8NE2ACTIAJ/HcBH3wCnyEaX70T9tEAAAAASUVORK5CYII=" InformativeScreenshot="f692a8927d4ac63dd5ae6539eae629aa.jpg" Reference="j_ACAEB6iEy4BcQEQ2MfdA/8DRx30i650mj6FGkisrJCg" Selector="&lt;html app='chrome.exe' title='*' url='https://www.imdb.com*' /&gt;" Title="IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp; TV Shows" Url="https://www.imdb.com/" Version="V2" />
+                </uix:NApplicationCard.TargetApp>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NApplicationCard>
+            </TryCatch.Try>
+            <TryCatch.Catches>
+              <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                <ActivityAction x:TypeArguments="s:Exception">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1022,224" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="988,164" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn" Message="[&quot;Couldn't Attach/Open browser tab, &quot;+exception.Message]" />
+                  </Sequence>
+                </ActivityAction>
+              </Catch>
+            </TryCatch.Catches>
+            <TryCatch.Finally>
+              <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="990,25" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Sequence>
+            </TryCatch.Finally>
+          </TryCatch>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="1026,224" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="992,164" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Warn" Message="[&quot;No credentials returned&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1028,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;End: Open_IMDB&quot;]" />
+  </Sequence>
+</Activity>

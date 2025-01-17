@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5HTksLdxDEm9Ftc5JcH4hA" Reference="OJDNAUAQeUK4UflTQ7tXjg/O1kEz4TI30KiBSzm1I7oog" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/title/tt7366338" CVScreenId="9ad8570b-177d-4d86-88f3-f5ccb631a3bb" DesignTimeRectangle="559, 337, 34, 20" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;webctrl aria-role='presentation' idx='2' isleaf='1' tag='LI' /&gt;" Guid="63c3ea81-69c2-41db-abde-018476d48c78" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Chernobyl (TV Mini Series 2019) - IMDb' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a8b3d70e8bab228d7640e05c2cd2d4b9.png" xmlns="">0kPYx5eKLVkSQ4wP5wfo0Eg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

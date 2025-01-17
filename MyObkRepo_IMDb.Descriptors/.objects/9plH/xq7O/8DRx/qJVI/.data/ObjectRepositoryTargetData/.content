@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="mj_6UEc-AUyg_MlR5hmhow" Reference="OJDNAUAQeUK4UflTQ7tXjg/qJVIUMnsBUidfyn6pmbfqg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/title/tt3006802" CVScreenId="cca492ff-30c9-469f-84bc-f73777ef1229" DesignTimeRectangle="423, 285, 42, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='__next' tag='A' class='ipc-link ipc-link--baseAlt ipc-link--inherit-color' css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a' parentclass='ipc-inline-list__item' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='A' class='ipc-link ipc-link--baseAlt ipc-link--inherit-color' type='' parentclass='ipc-inline-list__item' aaname='2014– ' check:text='2014–' /&gt;" Guid="0e1771ad-3853-494f-9c86-cc72c857ec90" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cca492ff-30c9-469f-84bc-f73777ef1229" CvTextArea="341, 287, 64, 13" CvTextArgument="TV Series" CvType="Text" DesignTimeRectangle="344, 285, 61, 20" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' isleaf='1' tag='LI' type='' class='ipc-inline-list__item' aaname='TV Series' check:innerText='TV Series' /&gt;" Guid="efb62a51-31ef-4ef1-89df-434d12ab5970" SearchSteps="FuzzySelector, CV" />
+          <Target DesignTimeRectangle="344, 313, 278, 415" FuzzySelectorArgument="&lt;webctrl class='ipc-lockup-overlay__screen' parentid='__next' tag='DIV' type='' aaname='' /&gt;" Guid="d455818b-5911-498e-ae30-23130baa1fa8" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3f88425eb1c5effeee4839a003754cff.png" xmlns="">0iELaSDcyHUqcuDcJi73GCA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

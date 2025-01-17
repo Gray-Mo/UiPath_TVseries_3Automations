@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ek0dfU2c5ESjNsV4hoAF7A" Reference="OJDNAUAQeUK4UflTQ7tXjg/lRCKudEMeUq_634onp50Pg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com" CVScreenId="b16e74e6-9270-4d5f-bb74-e5674c6329cb" DesignTimeRectangle="1470, 113, 45, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sign In' class='ipc-btn__text' parentid='imdbHeader' tag='SPAN' /&gt;" Guid="831b0ebb-2d14-4d6e-9bc8-9fe4945a95a6" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="187c4cb4e0a89441b79380b8dabe37a5.png" xmlns="">0wdCjj8xWBkaRbLfNLhdp2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

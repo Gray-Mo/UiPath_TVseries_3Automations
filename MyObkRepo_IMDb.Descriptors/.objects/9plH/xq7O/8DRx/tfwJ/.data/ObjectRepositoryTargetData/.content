@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xVEsKKkHq0GAOHXZdKTpcA" Reference="OJDNAUAQeUK4UflTQ7tXjg/tfwJlFTzYUWLSXsAdb4smQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/title/tt0411008" CVScreenId="1792ea53-299b-4faa-817e-f46b01339857" DesignTimeRectangle="1264, 255, 32, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='SPAN' type='' class='sc-d541859f-1 imUuxf' /&gt;" Guid="c3e05f2b-0ac8-4081-948f-5eb581440ef4" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Lost (TV Series 2004–2010) - IMDb' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1792ea53-299b-4faa-817e-f46b01339857" CvTextArea="1218, 236, 97, 12" CvTextArgument="IMDb RATING" CvType="Text" DesignTimeRectangle="1229, 235, 96, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='IMDb RATING' parentid='__next' tag='DIV' type='' class='sc-acdbf0f3-1 ioCFan' check:innerText='IMDb RATING' /&gt;" Guid="1cc01e25-3723-400c-8d37-2476d7e82d57" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4ffe8ccc7bcc63a038e853add3eb3615.png" xmlns="">0mc7orLMbb0ufo4u5XiOPJw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

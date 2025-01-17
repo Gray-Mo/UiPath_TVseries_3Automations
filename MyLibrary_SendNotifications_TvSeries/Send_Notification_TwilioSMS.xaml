@@ -1,0 +1,219 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Send_Notification_TwilioSMS" this:Send_Notification_TwilioSMS.in_NotificationBody="Test" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_NotificationBody" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Send_Notification_TwilioSMS_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Send_Notification_TwilioSMS" sap:VirtualizedContainerService.HintSize="1286,1914" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="TwiSender" />
+      <Variable x:TypeArguments="x:String" Name="TwiReceiver" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="418,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Start: Send_Notification_TwilioSMS&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="418,824" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="416,401" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Twilio_Sender" CacheStrategy="None" DisplayName="Get Asset" FolderPath="MyProjects" sap:VirtualizedContainerService.HintSize="382,175" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+            <ui:GetRobotAsset.Value>
+              <OutArgument x:TypeArguments="x:String">[TwiSender]</OutArgument>
+            </ui:GetRobotAsset.Value>
+          </ui:GetRobotAsset>
+          <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Twilio_Receiver" CacheStrategy="None" DisplayName="Get Asset" FolderPath="MyProjects" sap:VirtualizedContainerService.HintSize="382,166" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
+            <ui:GetRobotAsset.Value>
+              <OutArgument x:TypeArguments="x:String">[TwiReceiver]</OutArgument>
+            </ui:GetRobotAsset.Value>
+          </ui:GetRobotAsset>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,224" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;Couldn't get Twilio SMS assets, &quot;+exception.Message]" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="418,730" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+      <TryCatch.Try>
+        <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACq1W224aSRD9ldY8rghrYKNskPxgiJ0lMQF5sLOryBo1MwV0GLpnu2uwWQtpfyO/ly/Z6p6Lxwy+r3hhqqrrcup6450IiCPTVxK5kKC97o3nA9fhgk9jyJhe99tlwxvIJMWScON94Svwuh4qr+F9ECaJ+SYnTRwJTKhFgkJJS1oA0xCCWIP++e8Pw5KFksBkupqSzYY32ST2pUEt5Jy+faVxpCPrT8vpEnNSc+ONlRG5yrEWK6433rZRcdjrok6hSrE+WYetVxTFGZhESVMKnsHfqdAQFd8uwFMV8txKT0XWRBnuTKtVLeCTnFgL2YCM9gTMcMGRCUOQzIVBIPvsSuCCTa5ELNTDeLQb3qlSyzSxeIym3yHE3I2BDNWK5MfW1BdnyXiF9AWPUyvk/AhK4MccF0T99cG3JYZ3Hl9uq5k5VTzqbT7AjKcxFmjuT5fD+Ci0jLy2npRAh/L/kMKp/d5NoRPal0IybvgcGCo2dQlF+xcr9fxwujqPl+9rA+JRpMnLQAOSe1ZmN7qjTIJVJXZ9ftRKksQi4wZGRHUbt3yW8Z9tARFWCdY1l/Rco5AIcwf8idIrjhmp036CjZAGHUHwAFZ2FNosvwarmdIhBBHEtj7qxUZeh8Aq7Fz/VKkYuHyCgRW/DhItQqjpHvJrVnBeD9cKIsGDVMfffrmsm7JMRswXIJS3lXtW15u3XMbcVX1M88dtoGKk+UPfqS6+v9J0NVSO3vbyqY6Q5sCAXhNue4t7WEixXOqeEt9t5cesJzRm7QagiuRuIO7DeVwKsUzoBXgnWq1FBMEMIJrycFk3kgmwisCzq9LQRMMAaJVENL12LfiWy265z1ePHFMThDyOrYf7oPKdCCtEXgDUmsciErgJKDVC1aO4yPms5L+0y6g4RynuPao+CQzyLjD3tYepratbX86F3evNgXVJO6t+VrZNu3bXtIPANP2vxzTf3N9+5+279nHnt/fveqXdoK+BIzR7qYxiaO6QG2zfm+bRxeTqY2eG/p9nrY/n5q/ztj4bnAwa7MLWsJKHreaB/dFzOhNSDYcSUtQ8brBxOqX98Rk2E7UEeSjT2M4VuwvBEJgzHht4vMEyROnhwBCIjluIDsyQTtxCQYW1tZfMQFJ5yRDGXBPMdJNRQmikZG6TYuc46aX1IOnkUpo8JXIqEkL6DbrD7U05TEgwR3qTp6SfUiJc3d+52SrJ/AMxGQIuqKioHRUFTW71ebiAqHLCObfcFdq1EJUiPa2uaDYNaFVaEaLnFwb56c4nO7Co5MbUFmSwGlirfTey4owvjtGScedR8/f3ZTD3Fuh9sY6oe4qUZQVVA2DkTyr3aeXtKZfzlP4TGezYoI03pk9f/EOk1sHBAWnipkdal5SJ/oLELWp5AU3gGnuxCpfu9Nz+B/Jhi/sBDQAA" ConnectionId="1462f274-4708-43c9-bdff-1a3572e3497b" DisplayName="Send SMS - Twilio" sap:VirtualizedContainerService.HintSize="416,285" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="93639dac-5d0f-3ed6-b16a-2f6712ec83fb">
+          <isactr:ConnectorActivity.FieldObjects>
+            <isactr:FieldObject Name="_to" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:String">[TwiReceiver]</InArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="from" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:String">[TwiSender]</InArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="body" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:String">[in_NotificationBody]</InArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="Jit_Messages" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <OutArgument x:TypeArguments="x:Object" />
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+          </isactr:ConnectorActivity.FieldObjects>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </isactr:ConnectorActivity>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,224" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,164" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Warn" Message="[&quot;Couldn't Send Twilio SMS, &quot;+exception.Message]" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="418,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;End: Send_Notification_TwilioSMS&quot;]" />
+  </Sequence>
+</Activity>

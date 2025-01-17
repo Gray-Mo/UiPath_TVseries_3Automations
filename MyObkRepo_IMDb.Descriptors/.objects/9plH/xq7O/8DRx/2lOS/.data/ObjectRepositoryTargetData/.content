@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="B_kWASuRCka_Pm6BKi4L_Q" Reference="OJDNAUAQeUK4UflTQ7tXjg/2lOSc--VXkylA4mw4V1dOQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/title/tt0411008" CVScreenId="1792ea53-299b-4faa-817e-f46b01339857" DesignTimeRectangle="447, 197, 40, 20" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' parentid='__next' tag='SPAN' type='' class='sc-d57f136e-3 hNnmEr' /&gt;" Guid="3e9f1cee-e364-4cdb-87dd-8ef488df9dcf" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Lost (TV Series 2004–2010) - IMDb' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1792ea53-299b-4faa-817e-f46b01339857" CvTextArea="342, 198, 105, 19" CvTextArgument="Episode guide" CvType="Text" DesignTimeRectangle="344, 197, 103, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' parentid='__next' tag='SPAN' type='' class='sc-d57f136e-1 imkNWo episode-guide-text' aaname='Episode guide' check:innerText='Episode guide' /&gt;" Guid="dcdb1f6d-50a6-4fd7-9905-c3cc6bd1389e" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="cca492ff-30c9-469f-84bc-f73777ef1229" DesignTimeRectangle="404, 107, 96, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='imdbHeader-navDrawerOpen' tag='LABEL' type='' class='ipc-responsive-button ipc-btn--theme-baseAlt ipc-responsive-button--transition-l ipc-btn--on-textPrimary ipc-responsive-button--single-padding ipc-responsive-button--button-radius sc-fXayqf eNfLqG hamburger__icon' aaname='' check:innerText='Menu' /&gt;" Guid="dc34b39f-cb75-4716-b439-1138896208c5" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e6ef5ce24bcf448ebc3a9e2c834f5cc5.png" xmlns="">0xMHZJ48uPUeCnvshNhDiHQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

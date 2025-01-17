@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="btWFMl-FwUOP0CgGX2qy7A" Reference="OJDNAUAQeUK4UflTQ7tXjg/Q1YHwsMBDUW-JBbAir99Wg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/registration/signin" CVScreenId="a8f0339c-ca8a-4ac3-98e0-4b170fc5ccb4" DesignTimeRectangle="556, 226, 242, 34" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='signin-options' tag='A' type='' class='list-group-item ' aaname='Sign in with IMDb' check:innerText='Sign in with IMDb' /&gt;" Guid="4e5e65e4-8a51-4997-89d5-cf03d205a897" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in with IMDb - IMDb' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="bb1f8bd4a23dc0c7fe3e1ffe19811b47.png" xmlns="">0Eh_Gyvo4kkWhXk8RuJALJg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

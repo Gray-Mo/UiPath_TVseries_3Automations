@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Start year - End year",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "qJVIUMnsBUidfyn6pmbfqg",
+  "Reference": "OJDNAUAQeUK4UflTQ7tXjg/qJVIUMnsBUidfyn6pmbfqg",
+  "ParentRef": "OJDNAUAQeUK4UflTQ7tXjg/8DRx30i650mj6FGkisrJCg",
+  "Created": "2025-01-15T20:00:36.2762002Z",
+  "Updated": "2025-01-15T20:00:36.2762002Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

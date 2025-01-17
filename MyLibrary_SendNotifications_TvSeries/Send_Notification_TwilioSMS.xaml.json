@@ -1,0 +1,33 @@
+{
+  "DisplayName": "Send_Notification_TwilioSMS",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_NotificationBody",
+      "DisplayName": "in_NotificationBody",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "Send_SMS_Twilio",
+      "DisplayName": "uipath-twilio-messaging",
+      "Category": null,
+      "Tooltip": "Send SMS - Twilio",
+      "Placeholder": null,
+      "Widget": "Connection",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 1,
+      "DataSourceItems": null
+    }
+  ]
+}
